@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import Nav from './components/Nav/Nav'
 import AddTask from './components/AddTask/AddTask'
-import Routes from './Routes'
 // import {action2} from './ducks/product/action2';
 // import {getPokemon} from './ducks/pokemon/getPokemon';
 
@@ -13,7 +12,7 @@ export default class App extends Component {
 
     return (
       <div className="App">
-        <Routes/>
+        <Nav/>
         <AddTask></AddTask>
         {/* {
           !this.props.todos.length ? null

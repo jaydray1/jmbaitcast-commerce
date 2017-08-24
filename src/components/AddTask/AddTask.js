@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
-import { connect } from 'react-redux'
-import Nav from '../Nav/Nav'
+// import { connect } from 'react-redux'
 import './AddTask.css'
 
-import { createTask } from '../../ducks/taskReducer'
+// import { createTask } from '../../ducks/taskReducer'
 
 export default class AddTask extends Component {
     render() {

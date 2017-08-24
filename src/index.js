@@ -1,23 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Provider} from 'react-redux'
-import {createStore, applyMiddleware, combineReducers} from 'redux'
-import promiseMiddleware from 'redux-promise-middleware'
-import taskReducer from './ducks/taskReducer' 
-import Routes from './Routes'
-
+import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
 
 import './index.css'
 
+import store from './store'
+
 import App from './App'
 
-const Store = applyMiddleware(promiseMiddleware())(createStore);
-const rootReducer = combineReducers(taskReducer)
-
 ReactDOM.render(
-        <Provider store = {Store(rootReducer)}>
-            <App />
-        </Provider>, 
-    document.getElementById('root'));
-
-
+    <BrowserRouter>
+        <Provider store={ store }>
+            <App/>
+        </Provider>
+    </BrowserRouter>,
+    document.getElementById('root')
+)
