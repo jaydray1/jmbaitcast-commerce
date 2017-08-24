@@ -1,0 +1,15 @@
+.input_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+    border-radius: 10%;
+    border: 3px solid blue;
+}
+.task_add_button {
+    background-color: #f7786b;
+    color: white;
+}
+h4 {
+    text-decoration: underline;
+}
