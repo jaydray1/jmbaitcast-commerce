@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     width: 20em;
-    border-radius: 10%;
-    border: 3px solid blue;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 2em;
+    border: 2px solid red;
 }
 .task_add_button {
     background-color: #f7786b;
@@ -12,4 +14,11 @@
 }
 h4 {
     text-decoration: underline;
+}
+.task_card {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 3em;
+    margin-top: 1em;
 }

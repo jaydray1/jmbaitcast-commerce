@@ -8,7 +8,7 @@ import logo from '../../assets/logo.png'
 export default function Nav() {
     return(
         <nav className="nav">
-            <Link to="/">
+            <Link to="/home">
                 <img
                 alt="logo"
                 className="nav_logo"
@@ -17,16 +17,26 @@ export default function Nav() {
             </Link>
             <tabs>
                 <ul>
+                    <Link to="/">
                     <li>Home</li>
-                    <li>Add Task</li>
-                    <li>Task List</li>
+                    </Link>
+                    <Link to="/addtask">
+                    <li>Add</li>
+                    </Link>
+                    <Link to="/list">
+                    <li>List</li>
+                    </Link>
+                    <Link to="/groceries">
                     <li>Groceries</li>
+                    </Link>
                     <li>Login</li>
                     <li>Logout</li>
                 </ul>
             </tabs>
             <shoppingcart className="shopping">
-                <i className="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                <Link to="cart">
+                    <i className="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                </Link>
             </shoppingcart>
         </nav>
     )

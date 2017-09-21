@@ -6,13 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 
 import store from './store'
-
-import App from './App'
+import Router from './Router'
 
 ReactDOM.render(
     <BrowserRouter>
         <Provider store={ store }>
-            <App/>
+            <Router/>
         </Provider>
     </BrowserRouter>,
     document.getElementById('root')
