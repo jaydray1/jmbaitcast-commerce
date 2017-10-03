@@ -29,6 +29,10 @@ class Cart extends Component {
                             task will appear first along with your username if you haven't 
                             refreshed your browser. Go ahead and click "Submit User" to see a 
                             list of ALL the tasks you have inputted under your chosen username.
+                            <br/>
+                            <br/>
+                            *Try typing in "dreher" so you can see a copious list of previously bought 
+                            tasks
                      </span>
                 </div>
                 <h1>Mock Cart</h1>

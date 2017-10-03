@@ -2,7 +2,7 @@ module.exports = {
     postTask:(req, res, next) => {
         const dbInstance = req.app.get('db');
         let user = req.body;
-        console.log(user)
+        
         dbInstance.insert_task([
             user.task,
             user.description,

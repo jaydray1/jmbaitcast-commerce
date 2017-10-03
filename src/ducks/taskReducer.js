@@ -52,7 +52,7 @@ const Purchase = (state, action) => {
 const RetrieveTasks = (state, action) => {
     const { cart } = state;
     let newCart = cart.slice();
-    console.log(action.payload)
+    
     newCart = Object.assign({}, state, {cart:action.payload, userName: ''})
     return newCart;
 }
