@@ -14,10 +14,7 @@ const Router = () => (
     <Nav></Nav>
     <Switch>
       <Route component={ App } exact path="/"/>
-      <Route component={ TaskView } path="/addtask"/>
-      <Route component={ Groceries } path="/groceries"/>
       <Route component={ Cart } path="/cart" />
-      <Route component={ Details } path="/details" />
     </Switch>
   </div>
 );

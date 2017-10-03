@@ -1,0 +1,12 @@
+.cart-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-desc {
+    display: flex;
+    text-align: center;
+    width: 35em;
+    margin-top: 2em;
+    font-size: 16px;
+}

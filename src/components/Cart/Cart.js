@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import '../../components/Cart/Cart.css'
 
 import { retrieveTasks, handleInputChange } from '../../ducks/taskReducer'
 
@@ -22,10 +23,18 @@ class Cart extends Component {
             cart
         } = this.props
         return(
-            <div>
-                <h1>Buy Stuff!</h1>
+            <div className="cart-main">
+                <div className="cart-desc">
+                    <span>Welcome to your mock cart! Your most recently added
+                            task will appear first along with your username if you haven't 
+                            refreshed your browser. Go ahead and click "Submit User" to see a 
+                            list of ALL the tasks you have inputted under your chosen username.
+                     </span>
+                </div>
+                <h1>Mock Cart</h1>
                 <span className="input_header">User Name</span>
                 <input className="input_input" name="userName" value={userName} onChange={this.handleInputChange} />
+                <br/>
                 <br/>
                 <button onClick={ this.retrieveTasks }>Submit User</button>
                 <br/>

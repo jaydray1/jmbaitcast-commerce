@@ -8,21 +8,13 @@ export default function Nav() {
     return(
         <nav className="nav">
             <tabs>
-                <ul>
+                <ul className="nav-list">
                     <Link to="/">
-                    <li>Home</li>
+                    <li className="nav-item">Home</li>
                     </Link>
-                    {/* <Link to="/addtask">
-                    <li>Add</li>
-                    </Link>
-                    <Link to="/list">
-                    <li>List</li>
-                    </Link>
-                    <Link to="/groceries">
-                    <li>Groceries</li>
+                    {/* <Link to="/development">
+                    <li className="nav-item">Development</li>
                     </Link> */}
-                    {/* <li>Login</li>
-                    <li>Logout</li> */}
                 </ul>
             </tabs>
             <shoppingcart className="shopping">

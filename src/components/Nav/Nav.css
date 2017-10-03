@@ -5,16 +5,16 @@ nav {
     height: 10vh;
     background-color: #f7786b;
 }
-ul {
+.nav-list {
     display: flex;
     list-style: none;
     margin: 15px;
 }
-li {
+.nav-item {
     display: flex;
     justify-content: space-around;
     margin: 2px;
-    font-size: 5em;
+    font-size: 3em;
 }
 .shopping {
     margin: 1em;
