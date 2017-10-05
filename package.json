@@ -28,6 +28,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "proxy": "http://localhost:3040"
+  "proxy": "http://localhost:3000"
 }
 
