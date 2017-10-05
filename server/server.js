@@ -27,7 +27,7 @@ app.get('/api/tasks/:userid', getUserTask.getUserTask)
 
 
 app.all('/*', (req, res) => { // This is what you need.
-res.sendFile('index.html', { root: __dirname + './../build' });
+    res.sendFile('index.html', { root: __dirname + './../build' });
 });
 
 app.listen(config.port, () => {console.log(`Listening on port ${config.port}`); } );
