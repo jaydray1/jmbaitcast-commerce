@@ -1,56 +1,49 @@
-.list {
-    width: 35em;
-}
 .main-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-     
+    margin-left: 2em;
 }
+
 .task_main_wrap {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+ 
+}
+.task_card {
+    margin-left: 90px;
+    border-bottom: 2px solid black;
+}
+.task_cards_flow {
+    width: 100%;
 }
 .input_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 20em;
+    width: 40em;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-top: 2em;
-    border-left: 2px solid blue;
-    border-bottom: 2px solid blue;
-    border-radius: 3%;
-}
-.task_add_button {
-    background-color: #f7786b;
-    color: white;
-}
-h4 {
-    text-decoration: underline;
-}
-p {
-    font-size: 20px;
-    font-style: italic;
-}
-.task_card {
-    display: flex;
-    flex-direction: column;
-    width: 60em;
-    height: 25em;
-    border: 2px solid black;
-    padding: 3em;
-    margin-top: 1em;
-    font-size: 12px;
 }
 .butt_buttons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 5em;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.fa-angle-double-right {
+    margin-top: 70px;;
+    font-size: 15em;
+    margin-left: 10px;
+    margin-right: 110px;
+    color: rgb(42, 170, 224);
 }

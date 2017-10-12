@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import '../../components/Cart/Cart.css'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import '../../components/Cart/Cart.css';
 
-import { retrieveTasks, handleInputChange } from '../../ducks/taskReducer'
+import { retrieveTasks, handleInputChange } from '../../ducks/taskReducer';
 
 class Cart extends Component {
     constructor(props) {
@@ -24,27 +24,17 @@ class Cart extends Component {
         } = this.props
         return(
             <div className="cart-main">
-                <div className="cart-desc">
-                    <span>Welcome to your mock cart! Your most recently added
-                            task will appear first along with your username if you haven't 
-                            refreshed your browser. Go ahead and click "Submit User" to see a 
-                            list of ALL the tasks you have inputted under your chosen username.
-                            <br/>
-                            <br/>
-                            *Try typing in "dreher" so you can see a copious list of previously bought 
-                            tasks
-                     </span>
-                </div>
-                <h1>Mock Cart</h1>
-                <span className="input_header">User Name</span>
+                <h1>Cart</h1>
+                <span className="input_header">Handle</span>
                 <input className="input_input" name="userName" value={userName} onChange={this.handleInputChange} />
                 <br/>
                 <br/>
-                <button onClick={ this.retrieveTasks }>Submit User</button>
+                <button onClick={ this.retrieveTasks }>Grab All Items</button>
                 <br/>
                 <div className="task_cards_flow">
                 {cart.map((e, i) =>
                 (<div key={i} className="task_card">
+                
                         <h2>
                             {e.task}
                         </h2>

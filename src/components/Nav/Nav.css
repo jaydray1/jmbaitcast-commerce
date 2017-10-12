@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 nav {
     display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: space-around;
     height: 10vh;
-    background-color: #f7786b;
+    background-color: #2E3E4C;
+    padding: 15px;
+    color: white;
 }
-.nav-list {
+.nav_header-wrapper {
     display: flex;
-    list-style: none;
-    margin: 15px;
+    align-items: center;
 }
-.nav-item {
-    display: flex;
-    justify-content: space-around;
-    margin: 2px;
-    font-size: 3em;
+.nav_header {
+    margin: 0;
 }
-.shopping {
-    margin: 1em;
+.logo {
+   height: 4em;
+   margin-left: 2em;
+   margin-right: 2em;
+   width: auto;
+}
+.nav a, .nav a:visited {
+    color: white;
+    text-decoration: none;
 }
