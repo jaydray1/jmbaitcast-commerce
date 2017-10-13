@@ -13,7 +13,7 @@
     border-bottom: 2px solid black;
 }
 .task_cards_flow {
-    width: 100%;
+    width: 80%;
 }
 .input_card {
     display: flex;
@@ -39,6 +39,7 @@ button {
     cursor: pointer;
     font-family: sans-serif;
     font-weight: 200;
+    border: 8px solid white;
 }
 .fa-angle-double-right {
     margin-top: 70px;;
